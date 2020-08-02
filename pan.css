@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.top {
+    margin-bottom: 50px;
+}
+
+.body {
+    background-color: antiquewhite;
+}
+
+textarea {
+    resize: none;
+    width: 75px;
+    font-size: 55pt;
+}
+
+.black {
+    background-color: black;
+}
+
+.p {
+    line-height: 0px;
+}
+
+.div { 
+    max-width: 500px;
+    width: 50%;
+    float: left;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.tateyoko {
+    max-width: 300px;
+    width: 30%;
+    float: left;
+}
+
+.hinto {
+    margin-top: 70px;
+    margin-bottom: 450px
+}
+
+.p-2 {
+   line-height: 30px; 
+}
+
+.p-3 {
+   line-height: 30px;
+}
+
+.explanation {
+    max-width: 650px;
+    position: absolute; top: 650px; left: 100px;
+}
+
+.aa {
+    position: absolute; top: 120px; left:110px;
+}
+
+.au {
+    position: absolute; top: 120px; left:285px;
+}
+
+.ao {
+    position: absolute; top: 120px; left: 460px;
+}
+
+.ui {
+    position: absolute; top: 310px; left: 200px;
+}
+
+.ue {
+    position: absolute; top: 310px; left: 370px;
+}
+
+.ku {
+    position: absolute; top: 310px; left: 110px;
+}
+
+.ke {
+    position: absolute; top: 405px; left: 370px;
+}
+
+.ko {
+    position: absolute; top: 500px; left: 110px;
+}
+
+.key1 {
+    background-color: chartreuse;
+}
+
+.key2 {
+    background-color: aqua;
+}
+
+.key3 {
+    background-color: coral;
+}
+
+.key4 {
+    background-color: blueviolet;
+}
+
+.key5 {
+    background-color: deeppink;
+}
+
+.submit {
+    position: absolute; top: 640px; left:800px;
+}
+
+.answer {
+    position: absolute; top: 680px; left: 1000px;
+}
+
+.p-4 {
+    line-height: 29px;
+}
+
+.p-5 {
+    line-height: 27px;
+}
