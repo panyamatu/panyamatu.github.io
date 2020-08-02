@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="クロスワード"/>
+        <link rel="stylesheet" href="css/pan.css">
+        <title>クロスワード</title>
+    
+    </head>
+    
+    
+<body class="body">
+    <h1 class="top">漢字の読みでクロスワード</h1>
+    
+    
+    
+    <div class="div">
+        <p class="p">
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1" class="key2"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+        </p>
+        <p class="p">
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1" class="black"></textarea>
+    <textarea cols="1" rows="1" class="key5"></textarea>
+    <textarea cols="1" rows="1" class="black"></textarea>
+    <textarea cols="1" rows="1" class="key3"></textarea>
+        </p>
+        <p class="p">
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1" class="key1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1" class="black"></textarea>
+        </p>
+        <p class="p">
+    <textarea cols="1" rows="1" class="black"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1" class="black"></textarea>
+    <textarea cols="1" rows="1" class="key4"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+        </p>
+        <p class="p">
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1"></textarea>
+    <textarea cols="1" rows="1" class="black"></textarea>
+        </p>
+    </div> 
+    
+    <div class="tateyoko">
+        <h2>タテのカギ</h2>
+        <p>① 欠伸 <button type="button" onclick="hinto(0)">ヒント</button></p>
+        <p>② 水雲・海蘊 <button type="button" onclick="hinto(1)">ヒント</button></p>
+        <p>③ 弗 <button type="button" onclick="hinto(2)">ヒント</button></p>
+        <p>④ 釣瓶 <button type="button" onclick="hinto(3)">ヒント</button></p>
+        <p>⑤ 利比亜 <button type="button" onclick="hinto(4)">ヒント</button></p>
+    
+        <h2>ヨコのカギ</h2>
+        <p>① 扁桃 <button type="button" onclick="hinto(5)">ヒント</button></p>
+        <p>② 吃驚・喫驚 <button type="button" onclick="hinto(6)">ヒント</button></p>
+        <p>③ 鬢 <button type="button" onclick="hinto(7)">ヒント</button></p>
+        <p>④ 利比里亜 <button type="button" onclick="hinto(8)">ヒント</button></p>
+    </div>
+    
+    <div class="hinto">
+        <h3>ヒントの表示</h3>
+        <p class="p-2" id="hi"></p>
+        <p class="p-2" id="hu"></p>
+        <p class="p-2" id="he"></p>
+        <p class="p-2" id="ho"></p>
+        <p class="p-2" id="ma"></p>
+        <br>
+        <p class="p-3" id="mi"></p> 
+        <p class="p-3" id="mu"></p>
+        <p class="p-3" id="me"></p>
+        <p class="p-3" id="mo"></p>  
+    </div>
+    
+    <div class="explanation">
+        <h3>説明</h3>
+    <p>・ヒントを押すと横の欄に表示されます</p>
+    <p>・答えを押すと横の欄に表示されます</p>
+    <p>・空欄に文字が入力できるのでメモとして使えます</p>
+    <p>・白マスには文字を入力することができますが一文字しか表示されません　<br> 
+    2文字目を入力すると1文字目が見えなくなるので気をつけてください</p>
+    <p>・最後に色のついている5文字を並べ替えるとキーワードができます</p>
+    </div>
+    
+    <div>
+        <p class="aa">1</p>
+        <p class="au">2</p>
+        <p class="ao">3</p>
+        <p class="ui">4</p>
+        <p class="ue">5</p>
+        <p class="ku">2</p>
+        <p class="ke">3</p>
+        <p class="ko">4</p>
+    </div>
+    
+    <div class="submit">
+        <h3>答え</h3>
+        <h4>タテのカギ</h4>
+        <p><button type="button" onclick="answer(0)">①</button></p>
+        <p><button type="button" onclick="answer(1)">②</button></p>
+        <p><button type="button" onclick="answer(2)">③</button></p>
+        <p><button type="button" onclick="answer(3)">④</button></p>
+        <p><button type="button" onclick="answer(4)">⑤</button></p>
+        <h4>ヨコのカギ</h4>
+        <p><button type="button" onclick="answer(5)">①</button></p> 
+        <p><button type="button" onclick="answer(6)">②</button></p>
+        <p><button type="button" onclick="answer(7)">③</button></p>
+        <p><button type="button" onclick="answer(8)">④</button></p>
+        <p><button type="button" onclick="answer(9)">キーワード</button></p>
+    </div>
+    
+    <div class="answer">
+        <h3>解答の表示</h3>
+        <p class="p-4" id="sa"></p>
+        <p class="p-4" id="si"></p>
+        <p class="p-4" id="su"></p>
+        <p class="p-4" id="se"></p>
+        <p class="p-4" id="so"></p>
+        <br>
+        <p class="p-5" id="ta"></p> 
+        <p class="p-5" id="ti"></p>
+        <p class="p-5" id="tu"></p>
+        <p class="p-5" id="te"></p>
+        <p class="p-5" id="to"></p>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/nyanko.js"></script>
+       
+</body>  
+</html>
